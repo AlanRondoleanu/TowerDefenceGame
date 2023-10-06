@@ -19,12 +19,5 @@ public class Player : MonoBehaviour
             Vector2 targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             playerMovement.setTarget(targetPosition);           
         }
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (placementScript.getBlocked() == false)
-            {
-                placementScript.placeBuilding();
-            }
-        }
     }
 }

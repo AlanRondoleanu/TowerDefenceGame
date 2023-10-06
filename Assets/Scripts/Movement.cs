@@ -6,8 +6,8 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class Movement : MonoBehaviour
 {
-    Vector2 target = Vector2.zero;
-    NavMeshAgent agent;
+    private Vector2 target = Vector2.zero;
+    private NavMeshAgent agent;
 
     public float movespeed = 1;
 
